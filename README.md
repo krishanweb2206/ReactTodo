@@ -1,70 +1,58 @@
-# Getting Started with Create React App
+# Todo List
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+ ### Description: ######
+A Todolist app.
 
-## Available Scripts
+<ul>
+  <li>Features
+        <ol>
+        <li>Fetch and show todo items from the api - https://jsonplaceholder.typicode.com/todos</li>
+        <li>Add a todo item, By making a POST call to the above url (from where we are fetching) and save the item in react state. (This will be a dummy request, we won’t be able to add items to the server. But the request is valid and will send us some data</li>
+        <li>Update the item, by making a PUT call to the above url. (Again this is a dummy call).</li>
+        <li>Delete an item, by making a DELETE call to the above url. (Again this is a dummy call)</li>
+        </ol>
+  </li>
+   
+</ul>
 
-In the project directory, you can run:
+### Screenshots: ######
+<h2> View </h2>
+</br>
 
-### `npm start`
+<img src="https://github.com/AbhishekV9/Todo-list-React/blob/master/image/todo-list.png" />
+</br>
+</br>
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### Technologies Stack: ######
+<ul>
+  <li><a href="https://code.visualstudio.com/">Vs Code </a>- awesome web-based text editor </li>
+  <li><a href="https://reactjs.org/">Reactjs </a>- a JavaScript library for building user interfaces </li>
+  <li><a href="https://react-redux.js.org/">React-Redux </a>- for global state </li>
+  <li><a href="https://getbootstrap.com/">BootStrap 5 </a>- awesome library for styling </li>
+  <li>etc </li>
+</ul>
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### Modules Used: ######
 
-### `npm test`
+     "@testing-library/jest-dom": "^5.14.1",</br>
+    "@testing-library/react": "^11.2.7",</br>
+    "@testing-library/user-event": "^12.8.3",</br>
+    "bootstrap": "^5.1.1",</br>
+    "gh-pages": "^3.2.3",</br>
+    "react": "^17.0.2",</br>
+    "react-dom": "^17.0.2",</br>
+    "react-redux": "^7.2.5",</br>
+    "react-scripts": "4.0.3",</br>
+    "redux": "^4.1.1",</br>
+    "redux-logger": "^3.0.6",</br>
+    "redux-thunk": "^2.3.0",</br>
+    "web-vitals": "^1.1.2"</br>
+ 
+ ### How to Install : ######
+ 
+Clone the project onto your local machine.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Run 'npm install' to install required dependencies.
 
-### `npm run build`
+Run 'npm start' to start the application.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
