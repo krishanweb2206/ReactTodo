@@ -1,3 +1,4 @@
+// Importing the Components
 import React, { Component } from "react";
 import { RiCloseCircleLine } from "react-icons/ri";
 import { TiEdit } from "react-icons/ti";
@@ -5,6 +6,7 @@ import TodoForm from "./TodoForm";
 import { connect } from "react-redux";
 import { updatereq } from "../actions/";
 
+// Class Component-TODO
 class Todo extends Component {
   constructor(props) {
     super(props);
@@ -13,7 +15,7 @@ class Todo extends Component {
       title: "",
     };
   }
-
+  // SetEdit the id and title in local state of todo
   setEdit = async (idVal, valueVal) => {
     this.props.dispatch(updatereq());
     await this.setState({
@@ -22,6 +24,7 @@ class Todo extends Component {
     });
   };
 
+  // update the and call the function which is pass by via props
   submitUpdate = (value) => {
     this.props.updateTodo(this.state.id, value);
     this.setEdit(null, "");

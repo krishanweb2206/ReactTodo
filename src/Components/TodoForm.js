@@ -1,6 +1,8 @@
+// Importing the modules
 import React, { Component } from "react";
 import { connect } from "react-redux";
 
+// Class Component with local state
 class TodoForm extends Component {
   constructor(props) {
     super(props);
@@ -11,7 +13,7 @@ class TodoForm extends Component {
       completed: false,
     };
   }
-
+  // Adding the todo operation and call onsubmit method which recieve through props
   handleSubmit = async (event) => {
     event.preventDefault();
 
@@ -30,12 +32,13 @@ class TodoForm extends Component {
       });
     }
   };
-
+  // Set the title into state
   handleChange = (event) => {
     this.setState({
       title: event.target.value,
     });
   };
+  // Unmount
   componentWillUnmount() {
     if (this.props.editstate) {
       this.setState({

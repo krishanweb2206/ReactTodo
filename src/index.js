@@ -1,3 +1,4 @@
+// Importing the modules
 import React from "react";
 import ReactDOM from "react-dom";
 import "./index.css";
@@ -9,6 +10,7 @@ import logger from "redux-logger";
 import ToDoLists from "./reducer";
 import "bootstrap/dist/css/bootstrap.min.css";
 
+// Create the store
 const store = createStore(ToDoLists, applyMiddleware(thunk, logger));
 
 ReactDOM.render(

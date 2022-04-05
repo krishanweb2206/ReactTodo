@@ -1,8 +1,10 @@
+// Importing the modules
 import React, { Component } from "react";
 import { connect } from "react-redux";
 import { fetchList } from "./actions/";
 import TodoList from "./Components/TodoList";
 
+// App Component
 class App extends Component {
   componentDidMount() {
     this.props.dispatch(fetchList());

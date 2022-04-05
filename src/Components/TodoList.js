@@ -1,3 +1,4 @@
+// Importing the modules
 import React, { Component } from "react";
 import TodoForm from "./TodoForm";
 import Todo from "./Todo";
@@ -10,15 +11,18 @@ import {
 } from "../actions/";
 import ReactPaginate from "react-paginate";
 
+// TodoList is Root component
 class TodoList extends Component {
   constructor(props) {
     super(props);
+    // Local State
     this.state = {
       currentPage: 0,
       editUser: false,
     };
   }
 
+  // Add the todo
   addTodo = (todo) => {
     if (!todo.title || /^\s*$/.test(todo.title)) {
       return;
@@ -26,6 +30,7 @@ class TodoList extends Component {
     this.props.dispatch(addFetchItem(todo, todo.id));
   };
 
+  // Update todo
   updateTodo = async (id, value) => {
     if (!value.title || /^\s*$/.test(value.title)) {
       return;
@@ -34,14 +39,17 @@ class TodoList extends Component {
     await this.setState({ editUser: true });
   };
 
+  // Remove the todo
   removeTodo = (id) => {
     this.props.dispatch(removeFetchItem(id));
   };
 
+  // Complete the task
   completeTodo = (id) => {
     this.props.dispatch(completeFetchItem(id));
   };
 
+  // Pagination set the page
   setCurrentPage = async ({ selected }) => {
     await this.setState({
       currentPage: selected,

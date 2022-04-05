@@ -1,3 +1,4 @@
+// Actions
 export const LOAD_LIST = "LOAD_LIST";
 export const ADD_ITEM = "ADD_ITEM";
 export const COMPLETE_ITEM = "COMPLETE_ITEM";
@@ -52,7 +53,7 @@ export function updateItem(itemId, text) {
     type: UPDATE_ITEM,
   };
 }
-
+//returning a function which is then call by thunk middleware with dispatch as an argument:- This function is used to call API and then dispatching the action with the Data we get after API call.
 export function fetchList() {
   return (dispatch) => {
     const url = "https://jsonplaceholder.typicode.com/todos";
@@ -64,6 +65,7 @@ export function fetchList() {
   };
 }
 
+//returning a function wich is then call by thunk middleware with dispatch as an argument:- This function is used to make Fake API call because we cannot change server side data and then dispatching an action to add new Task.
 export function addFetchItem(item, itemId) {
   return (dispatch) => {
     const url = "https://jsonplaceholder.typicode.com/todos";
@@ -80,6 +82,7 @@ export function addFetchItem(item, itemId) {
   };
 }
 
+//returning a function wich is then call by thunk middleware with dispatch as an argument:- This function is used to make Fake API call because we cannot change server side data and then dispatching an action to complete Task .
 export function completeFetchItem(itemId) {
   return (dispatch) => {
     const url = "https://jsonplaceholder.typicode.com/todos/1";
@@ -97,6 +100,7 @@ export function completeFetchItem(itemId) {
   };
 }
 
+//returning a function wich is then call by thunk middleware with dispatch as an argument:- This function is used to make Fake API call because we cannot change server side data and then dispatching an action to delete Task .
 export function removeFetchItem(itemId) {
   return (dispatch) => {
     const url = "https://jsonplaceholder.typicode.com/todos/1";
@@ -109,7 +113,7 @@ export function removeFetchItem(itemId) {
       });
   };
 }
-
+//returning a function wich is then call by thunk middleware with dispatch as an argument:- This function is used to make Fake API call because we cannot change server side data and then dispatching an action to update the task
 export function updateFetchItem(itemId, text) {
   return (dispatch) => {
     const url = "https://jsonplaceholder.typicode.com/todos/1";
