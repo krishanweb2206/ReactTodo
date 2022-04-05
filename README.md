@@ -26,7 +26,7 @@ A Todolist app.
 <h2> Update </h2>
 </br>
 
-<img src="https://github.com/krishanweb2206/ReactTodo/blob/main/screenshots/Homepage.JPG" />
+<img src="https://github.com/krishanweb2206/ReactTodo/blob/main/screenshots/Update.JPG" />
 </br>
 </br>
 
