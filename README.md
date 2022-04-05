@@ -16,7 +16,14 @@ A Todolist app.
 </ul>
 
 ### Screenshots: ######
-<h2> View </h2>
+<h2> HomePage </h2>
+</br>
+
+<img src="https://github.com/krishanweb2206/ReactTodo/blob/main/screenshots/Homepage.JPG" />
+</br>
+</br>
+
+<h2> Update </h2>
 </br>
 
 <img src="https://github.com/krishanweb2206/ReactTodo/blob/main/screenshots/Homepage.JPG" />
