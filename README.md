@@ -19,7 +19,7 @@ A Todolist app.
 <h2> View </h2>
 </br>
 
-<img src="https://github.com/AbhishekV9/Todo-list-React/blob/master/image/todo-list.png" />
+<img src="https://github.com/krishanweb2206/ReactTodo/blob/main/screenshots/Homepage.JPG" />
 </br>
 </br>
 
